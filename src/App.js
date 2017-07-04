@@ -43,15 +43,15 @@ class WeatherDisplay extends Component {
         return (
             <div>
                 <h1>
-                    It is {weatherType} in {weatherData.name}
+                    {weatherType}
                 </h1>
+                <h4>{weatherData.name}</h4>
                 <img src={iconUrl} alt={weatherData.description} width="100px"/><br/>
                 <p>Current: {weatherData.main.temp} °F</p>
                 <p>High: {weatherData.main.temp_max} °F</p>
                 <p>Low: {weatherData.main.temp_min} °F</p>
                 <p>Wind Speed: {weatherData.wind.speed} mph</p>
                 <p>Humidity: {weatherData.main.humidity}%</p>
-                <p> </p>
                 <p>Clouds: {weatherData.clouds.all}%</p>
             </div>
         );
