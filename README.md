@@ -6,20 +6,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is based from the "Weather App" React guide as seen [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-# Table of Contents
+## Table of Contents
 
 - [What this app is about](#what-this-app-is-about)
 - [Why am I building this app?](#why-am-i-building-this-app)
 - [Development Flow](#development-flow)
 
 
-#### What This App Is About
+### What This App Is About
 
 - Built to display current weather and a 5-Day forecast for a particular zip code
 - Testing sandbox for React, ES6, and Bootstrap
 - Experimenting with API Calls from [Open Weather Map](http://openweathermap.org)
 
-#### Why Am I Building This App?
+### Why Am I Building This App?
 
 I've been exposed to React/Redux off and on for about 2 years now. I've used it in
 a few projects but never really grasped the concepts.
@@ -33,7 +33,7 @@ could be extended to output other data ... such as a 5-day forecast. Hence the c
 future Forecast and output all this to an interactive front-end built using
 JQuery and Bootstrap.</i>
 
-#### Development Work Flow
+### Development Work Flow
 
 - Two branches within my [WeatherApp repo](https://github.com/tsperi/weatherApp): Master and Develop.
 - All work done locally gets committed and pushed to Develop
