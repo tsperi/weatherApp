@@ -36,16 +36,23 @@ class WeatherDisplay extends Component {
         if (!weatherData) return <div>Loading</div>;       // here until componentDidMount fires
         const weather = weatherData.weather[0];
         const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
+        let weatherType = weather.main;
+        if (weatherType === "Clouds") {
+           const weatherType = "Cloudy";
+        }
         return (
             <div>
                 <h1>
-                    It is {weather.main} in {weatherData.name}
-                    <img src={iconUrl} alt={weatherData.description} />
+                    It is {weatherType} in {weatherData.name}
                 </h1>
-                <p>Current: {weatherData.main.temp}°</p>
-                <p>High: {weatherData.main.temp_max}°</p>
-                <p>Low: {weatherData.main.temp_min}°</p>
-                <p>Wind Speed: {weatherData.wind.speed} mi/hr</p>
+                <img src={iconUrl} alt={weatherData.description} width="100px"/><br/>
+                <p>Current: {weatherData.main.temp} °F</p>
+                <p>High: {weatherData.main.temp_max} °F</p>
+                <p>Low: {weatherData.main.temp_min} °F</p>
+                <p>Wind Speed: {weatherData.wind.speed} mph</p>
+                <p>Humidity: {weatherData.main.humidity}%</p>
+                <p> </p>
+                <p>Clouds: {weatherData.clouds.all}%</p>
             </div>
         );
     }
