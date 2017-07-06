@@ -36,7 +36,12 @@ JQuery and Bootstrap.</i>
 ### Development Work Flow
 
 - Two branches within my [WeatherApp repo](https://github.com/tsperi/weatherApp): Master and Develop.
-- All work done locally gets committed and pushed to Develop
+- All work done locally gets committed and pushed to Develop via:
+```js
+$ git add .
+$ git commit -m "<description>"
+$ git push origin develop
+```
 - Create Pull Request to Master
 - Check all code and ensure that there will be no conflicts
 - Merge Pull Request into Master
